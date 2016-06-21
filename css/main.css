@@ -1,0 +1,373 @@
+/* line 1, ../sass/main.sass */
+header {
+  height: 100vh;
+  position: relative;
+  background: url("../img/imageBg.jpg") no-repeat 0 50%;
+  background-size: cover;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.5);
+}
+/* line 8, ../sass/main.sass */
+header .navbar-default {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  background-color: transparent;
+  border: none;
+}
+/* line 21, ../sass/main.sass */
+header .navbar-default .container .navbar-collapse .navbar-right li {
+  background-color: transparent;
+  -webkit-transition: all 0.2s;
+          transition: all 0.2s;
+}
+/* line 24, ../sass/main.sass */
+header .navbar-default .container .navbar-collapse .navbar-right li:hover {
+  background-color: #000;
+}
+/* line 26, ../sass/main.sass */
+header .navbar-default .container .navbar-collapse .navbar-right li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 11px;
+  -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 33, ../sass/main.sass */
+header .navbar-default .container .navbar-collapse .navbar-right li a:hover {
+  color: #fff;
+}
+/* line 35, ../sass/main.sass */
+header .header-text {
+  text-align: center;
+  margin: auto;
+}
+/* line 38, ../sass/main.sass */
+header .header-text h1, header .header-text p {
+  color: #000;
+  text-transform: uppercase;
+  -webkit-filter: drop-shadow(0 0 5px #fff);
+          filter: drop-shadow(0 0 5px #fff);
+}
+/* line 42, ../sass/main.sass */
+header .header-text h1 {
+  font-size: 70px;
+  font-weight: bold;
+  word-break: break-all;
+}
+/* line 46, ../sass/main.sass */
+header .header-text p {
+  font-size: 20px;
+}
+
+/* line 49, ../sass/main.sass */
+.types {
+  padding: 80px 0 30px 0;
+  background-color: #e9e8e8;
+}
+/* line 52, ../sass/main.sass */
+.types .item {
+  text-align: center;
+  padding: 30px;
+}
+/* line 56, ../sass/main.sass */
+.types .item i {
+  font-size: 80px;
+  color: #000;
+}
+/* line 59, ../sass/main.sass */
+.types .item h4 {
+  text-transform: uppercase;
+  color: #000;
+}
+/* line 62, ../sass/main.sass */
+.types .item p {
+  color: rgba(0, 0, 0, 0.7);
+}
+/* line 64, ../sass/main.sass */
+.types .item a {
+  position: relative;
+  display: block;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  line-height: 50px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000;
+  background: transparent;
+  font-weight: bold;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+}
+/* line 79, ../sass/main.sass */
+.types .item a:hover {
+  color: #fff;
+}
+/* line 81, ../sass/main.sass */
+.types .item a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  background: #000;
+  height: 3px;
+}
+/* line 90, ../sass/main.sass */
+.types .item a:hover::after {
+  z-index: -1;
+  -webkit-animation: fill 0.8s forwards;
+          animation: fill 0.8s forwards;
+}
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 3px;
+  }
+  50% {
+    width: 100%;
+    height: 3px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+@keyframes fill {
+  0% {
+    width: 0%;
+    height: 3px;
+  }
+  50% {
+    width: 100%;
+    height: 3px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+/* line 103, ../sass/main.sass */
+.hand {
+  height: 460px;
+  background: url("../img/handBg.jpg") no-repeat 0 25%;
+  background-size: cover;
+  position: relative;
+}
+/* line 108, ../sass/main.sass */
+.hand .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+/* line 115, ../sass/main.sass */
+.hand .overlay .getStarted {
+  padding: 40px 20px 20px 50px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  background-color: #fff;
+}
+/* line 121, ../sass/main.sass */
+.hand .overlay .getStarted h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+/* line 124, ../sass/main.sass */
+.hand .overlay .getStarted p {
+  color: #b1b1b1;
+  margin-bottom: 60px;
+}
+/* line 127, ../sass/main.sass */
+.hand .overlay .getStarted a {
+  display: block;
+  width: 100%;
+  height: 50px;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 11px;
+  z-index: 1;
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+}
+/* line 144, ../sass/main.sass */
+.hand .overlay .getStarted a:hover {
+  color: #000;
+}
+/* line 146, ../sass/main.sass */
+.hand .overlay .getStarted a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0%;
+  background: #fff;
+  height: 3px;
+}
+/* line 156, ../sass/main.sass */
+.hand .overlay .getStarted a:hover::after {
+  z-index: -1;
+  -webkit-animation: fill 0.8s forwards;
+          animation: fill 0.8s forwards;
+}
+@keyframes fill {
+  0% {
+    width: 0%;
+    height: 3px;
+  }
+  50% {
+    width: 100%;
+    height: 3px;
+  }
+  100% {
+    width: 100%;
+    height: 98%;
+  }
+}
+/* line 174, ../sass/main.sass */
+.portfolio .col-md-4 {
+  padding: 0;
+}
+/* line 176, ../sass/main.sass */
+.portfolio .col-md-4 .item {
+  position: relative;
+}
+/* line 178, ../sass/main.sass */
+.portfolio .col-md-4 .item .overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 0;
+  padding: 0 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 189, ../sass/main.sass */
+.portfolio .col-md-4 .item .overlay .description {
+  margin: auto;
+}
+/* line 191, ../sass/main.sass */
+.portfolio .col-md-4 .item .overlay .description h4, .portfolio .col-md-4 .item .overlay .description p {
+  color: transparent;
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+}
+/* line 194, ../sass/main.sass */
+.portfolio .col-md-4 .item .overlay .description h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+}
+/* line 198, ../sass/main.sass */
+.portfolio .col-md-4 .item .overlay .description p {
+  text-align: justify;
+  font-size: 14px;
+}
+@media (max-width: 360px) {
+  /* line 198, ../sass/main.sass */
+  .portfolio .col-md-4 .item .overlay .description p {
+    font-size: 10px;
+  }
+}
+/* line 204, ../sass/main.sass */
+.portfolio .col-md-4 .item:hover .overlay {
+  height: 85%;
+}
+/* line 206, ../sass/main.sass */
+.portfolio .col-md-4 .item:hover .overlay h4 {
+  color: #000;
+}
+/* line 208, ../sass/main.sass */
+.portfolio .col-md-4 .item:hover .overlay p {
+  color: #7e7e7e;
+}
+/* line 210, ../sass/main.sass */
+.portfolio .col-md-4 .item .overlayS {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: all 0.5s;
+          transition: all 0.5s;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 220, ../sass/main.sass */
+.portfolio .col-md-4 .item .overlayS a {
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  font-size: 11px;
+  margin: auto;
+}
+/* line 229, ../sass/main.sass */
+.portfolio .col-md-4 .item:hover .overlayS {
+  height: 15%;
+}
+
+/* line 231, ../sass/main.sass */
+footer {
+  height: 60px;
+  background-color: #000;
+}
+/* line 234, ../sass/main.sass */
+footer .container {
+  height: 60px;
+}
+/* line 236, ../sass/main.sass */
+footer .container i, footer .container p {
+  color: #fff;
+  display: inline-block;
+  line-height: 60px;
+  margin: 0;
+  padding: 0;
+}
+/* line 242, ../sass/main.sass */
+footer .container .social {
+  float: right;
+}
+/* line 244, ../sass/main.sass */
+footer .container .social i {
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=main.css.map */
